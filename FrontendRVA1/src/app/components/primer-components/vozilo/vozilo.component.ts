@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-vozilo',
   templateUrl: './vozilo.component.html'
 })
-export class VoziloComponent {
+
+export class VoziloComponent{
 
 }
