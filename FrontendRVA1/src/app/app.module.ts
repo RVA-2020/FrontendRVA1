@@ -39,6 +39,10 @@ import { PorudzbinaComponent } from './components/porudzbina/porudzbina.componen
 import { StavkaPorudzbineComponent } from './components/stavka-porudzbine/stavka-porudzbine.component';
 import { DobavljacService } from './services/dobavljac.service';
 import { StavkaPorudzbineService } from './services/stavka-porudzbine.service';
+import { ArtiklDialogComponent } from './components/dialogs/artikl-dialog/artikl-dialog.component';
+import { DobavljacDialogComponent } from './components/dialogs/dobavljac-dialog/dobavljac-dialog.component';
+import { PorudzbinaDialogComponent } from './components/dialogs/porudzbina-dialog/porudzbina-dialog.component';
+import { StavkaPorudzbineDialogComponent } from './components/dialogs/stavka-porudzbine-dialog/stavka-porudzbine-dialog.component';
 
 
 @NgModule({
@@ -52,7 +56,11 @@ import { StavkaPorudzbineService } from './services/stavka-porudzbine.service';
     ArtiklComponent,
     DobavljacComponent,
     PorudzbinaComponent,
-    StavkaPorudzbineComponent
+    StavkaPorudzbineComponent,
+    ArtiklDialogComponent,
+    DobavljacDialogComponent,
+    PorudzbinaDialogComponent,
+    StavkaPorudzbineDialogComponent
   ],
   imports: [
     BrowserModule,

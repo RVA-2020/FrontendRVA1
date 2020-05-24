@@ -25,17 +25,19 @@ export class ArtiklService {
     return this.dataChange.asObservable();
   }
 
-  public addArtikl(artikl: Artikl): void {
-    this.httpClient.post(this.API_URL, artikl);
+  public addArtikl(artikl: Artikl): void{
+    artikl.id = 0;
+    this.httpClient.post(this.API_URL, artikl).subscribe();
+    console.log('Dodat artikl: ' + artikl.naziv);
   }
 
   public updateArtikl(artikl: Artikl): void {
-    this.httpClient.put(this.API_URL, artikl);
+    this.httpClient.put(this.API_URL, artikl).subscribe();
   }
 
   public deleteArtikl(id: number): void {
     console.log(this.API_URL + id);
-    this.httpClient.delete(this.API_URL + id);
+    this.httpClient.delete(this.API_URL + id).subscribe();
   }
 
 }
